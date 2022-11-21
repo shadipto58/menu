@@ -1,0 +1,53 @@
+@font-face{
+	src: url('fonts/Lato-Black.ttf');
+	font-family: lato;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #F8EFBA;
+}
+h1{
+	background: #9980FA;
+	width: 60%;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+}
+.menu{
+	background: #EE5A24;
+}
+.menu > ul{
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	list-style: none;
+}
+.menu ul li a{
+	text-decoration: none;
+	padding: 20px 30px;
+	display: block;
+	font-family: lato;
+	color: #fff;
+	text-transform: uppercase;
+}
+.menu ul li a:hover{
+	color: black;
+}
+.menu ul li ul{
+	display: none;
+}
+.menu ul li:hover > ul{
+	display: block;
+}
+.menu ul li ul{
+	position: absolute;
+	background: #009432;
+}
+.menu ul li ul a{
+	border-bottom: 1px solid;
+}
